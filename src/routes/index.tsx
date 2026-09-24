@@ -49,6 +49,13 @@ const specialties = [
   },
 ];
 
+const metrics = [
+  ["25+", "ANOS DE EXPERIÊNCIA"],
+  ["500+", "PROJETOS ENTREGUES"],
+  ["100%", "AÇO CERTIFICADO"],
+  ["24h", "SUPORTE TÉCNICO"],
+];
+
 function Logo() {
   return (
     <a href="#inicio" className="brand" aria-label="Riosulense — início">
@@ -71,7 +78,6 @@ function Index() {
       ".gallery > h2",
       ".gallery-intro",
       ".project-card",
-      ".metrics > div",
       ".footer-main > div",
     ];
     const targets = Array.from(document.querySelectorAll<HTMLElement>(selectors.join(",")));
@@ -154,7 +160,17 @@ function Index() {
       </section>
 
       <section id="sobre" className="metrics" aria-label="Nossos números">
-        {[['25+','ANOS DE EXPERIÊNCIA'],['500+','PROJETOS ENTREGUES'],['100%','AÇO CERTIFICADO'],['24h','SUPORTE TÉCNICO']].map(([number,label]) => <div key={label}><strong>{number}</strong><span>{label}</span></div>)}
+        <div className="metrics-track">
+          {[0, 1].map((copy) => (
+            <div className="metrics-group" aria-hidden={copy === 1} key={copy}>
+              {metrics.map(([number, label]) => (
+                <div className="metric-item" key={`${copy}-${label}`}>
+                  <strong>{number}</strong><span>{label}</span>
+                </div>
+              ))}
+            </div>
+          ))}
+        </div>
       </section>
 
       <footer id="contato">
