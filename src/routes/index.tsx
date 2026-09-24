@@ -1,4 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { useEffect } from "react";
 import {
   Camera,
   ChevronRight,
@@ -58,6 +59,43 @@ function Logo() {
 }
 
 function Index() {
+  useEffect(() => {
+    const selectors = [
+      ".section-head",
+      ".specialty-card",
+      ".featured > .eyebrow",
+      ".featured > h2",
+      ".featured-main",
+      ".featured-side img",
+      ".gallery > .eyebrow",
+      ".gallery > h2",
+      ".gallery-intro",
+      ".project-card",
+      ".metrics > div",
+      ".footer-main > div",
+    ];
+    const targets = Array.from(document.querySelectorAll<HTMLElement>(selectors.join(",")));
+
+    targets.forEach((target, index) => {
+      target.classList.add("reveal-on-scroll");
+      target.style.setProperty("--reveal-delay", `${Math.min(index % 4, 3) * 90}ms`);
+    });
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (!entry.isIntersecting) return;
+          entry.target.classList.add("is-visible");
+          observer.unobserve(entry.target);
+        });
+      },
+      { threshold: 0.12, rootMargin: "0px 0px -7% 0px" },
+    );
+
+    targets.forEach((target) => observer.observe(target));
+    return () => observer.disconnect();
+  }, []);
+
   return (
     <main id="inicio">
       <header className="topbar">
