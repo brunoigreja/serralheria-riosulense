@@ -9,6 +9,7 @@ import roof from "../assets/industrial-roof.jpg";
 import logoImg from "../assets/serralheria.png";
 import banner from "../assets/industrial-workshop.jpg";
 import estrutura from "../assets/estrutura.jpg";
+import capa from "../assets/capa.png";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -107,11 +108,11 @@ function Index() {
       </header>
 
       <section className="hero" aria-labelledby="hero-title">
-        <img src={banner} alt="Soldadores trabalhando em estruturas metálicas na fábrica Riosulense" width={1536} height={1024} />
+        <img src={banner} alt="Soldadores trabalhando em estruturas metálicas na fábrica Riosulense" width={1520} height={1024} />
         <div className="hero-shade" />
         <div className="hero-content">
           <div className="eyebrow ruled">RIO DO SUL · SC</div>
-          <h1 id="hero-title">Serralheria e Funilaria<br />Riosulense:<span style={{ color: '#ABC8F5' }}> Tradição e<br />Durabilidade em<br /></span >Estruturas Metálicas.</h1>
+          <img src={capa} alt="Soldadores trabalhando em estruturas metálicas na fábrica Riosulense" width={800} height={1024} />
           <p>Esquadrias sob medida e soluções industriais com a precisão técnica que seu<br className="desktop-only" /> projeto exige. Transformamos metal em segurança e estética.</p>
           <div className="hero-actions">
             <a className="button button-primary" href="https://wa.me/554735210000"><ChevronRight size={22} /> Solicitar Orçamento via WhatsApp</a>
