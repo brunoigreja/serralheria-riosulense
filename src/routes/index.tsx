@@ -1,24 +1,12 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useEffect } from "react";
-import {
-  Camera,
-  ChevronRight,
-  Compass,
-  Droplets,
-  Globe2,
-  Hammer,
-  Mail,
-  MapPin,
-  MessageCircle,
-  Phone,
-  Share2,
-  Wrench,
-  Zap,
+import { Camera, ChevronRight, Compass, Droplets, Globe2, Hammer, Mail, MapPin, MessageCircle, Phone, Share2, Wrench, Zap,
 } from "lucide-react";
 import workshop from "../assets/industrial-workshop.jpg";
 import warehouse from "../assets/blue-warehouse.jpg";
 import gate from "../assets/architectural-gate.jpg";
 import roof from "../assets/industrial-roof.jpg";
+import logoImg from "../assets/serralheria.png";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -39,7 +27,7 @@ const specialties = [
     title: "Serralheria",
     icon: Wrench,
     watermark: Hammer,
-    items: ["Portões Basculantes e Automatizados", "Galpões e Estruturas Metálicas Pesadas", "Grades, Corrimãos e Guarda-corpos", "Esquadrias de Ferro Sob Medida"],
+    items: ["Portões Basculantes e Automatizados", "Galpões e Estruturas Metálicas Pesadas", "Coberturas Metálicas, Corrimãos e Guarda-corpos", "Esquadrias de Ferro Sob Medida"],
   },
   {
     title: "Funilaria",
@@ -50,8 +38,8 @@ const specialties = [
 ];
 
 const metrics = [
-  ["25+", "ANOS DE EXPERIÊNCIA"],
-  ["500+", "PROJETOS ENTREGUES"],
+  ["36+", "ANOS DE EXPERIÊNCIA"],
+  ["700+", "PROJETOS ENTREGUES"],
   ["100%", "AÇO CERTIFICADO"],
   ["24h", "SUPORTE TÉCNICO"],
 ];
@@ -59,7 +47,11 @@ const metrics = [
 function Logo() {
   return (
     <a href="#inicio" className="brand" aria-label="Riosulense — início">
-      <svg viewBox="0 0 42 42" aria-hidden="true"><path d="M21 3 36 11v19l-15 9L6 30V11L21 3Zm0 6-9 5v12l5 3V17l9-5-5-3Zm10 7-9 5v11l9-5V16Z" fill="currentColor"/><path d="m17 29 4 3v-8l-4-2v7Z" fill="currentColor" opacity=".55"/></svg>
+      <img 
+        src={logoImg} 
+        alt="Logo Riosulense" 
+        className="brand-logo" 
+        width={60} height={56}/>
       <span>RIOSULENSE</span>
     </a>
   );
@@ -177,9 +169,9 @@ function Index() {
         <div className="footer-main">
           <div className="footer-about"><h2>RIOSULENSE</h2><p>Líder em Rio do Sul na fabricação de<br /> estruturas metálicas e soluções<br /> completas de funilaria para indústrias e<br /> residências.</p><div className="socials"><a href="#inicio" aria-label="Site"><Globe2 /></a><a href="#contato" aria-label="Compartilhar"><Share2 /></a><a href="#portfolio" aria-label="Instagram"><Camera /></a></div></div>
           <div className="footer-contact"><h3>CONTATO &amp; LOCALIZAÇÃO</h3><div className="map-placeholder"><MapPin /><span>RIO DO SUL · SANTA CATARINA</span></div><p><Phone /> (47) 3521-XXXX / (47) 9XXXX-XXXX</p><p><Mail /> contato@riosulensemetal.com.br</p></div>
-          <div className="hours"><h3>HORÁRIO DE ATENDIMENTO</h3><div className="hours-box"><p><span>Segunda - Sexta:</span><b>07:30 - 18:00</b></p><p><span>Sábado:</span><b>08:00 - 12:00</b></p><hr /><small>*Plantão emergencial para calhas disponível via WhatsApp em Rio do Sul.</small></div></div>
+          <div className="hours"><h3>HORÁRIO DE ATENDIMENTO</h3><div className="hours-box"><p><span>Segunda - Sexta:</span><b>07:30 - 18:00</b></p><hr /></div></div>
         </div>
-        <div className="footer-bottom"><span>© 2024 Serralheria e Funilaria Riosulense. Todos os direitos reservados.</span><div><a href="#inicio">Privacidade</a><a href="#inicio">Termos</a><a href="#contato">Suporte</a></div></div>
+        <div className="footer-bottom"><span>© 2024 Serralheria e Funilaria Riosulense. Todos os direitos reservados.</span><div><a href="#inicio">Desenvolvido por Bruno Igreja</a></div></div>
       </footer>
       <a className="floating-whatsapp" href="https://wa.me/554735210000" aria-label="Abrir WhatsApp"><MessageCircle /></a>
     </main>
