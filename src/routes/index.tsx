@@ -9,7 +9,7 @@ import roof from "../assets/industrial-roof.jpg";
 import logoImg from "../assets/serralheria.png";
 import banner from "../assets/industrial-workshop.jpg";
 import estrutura from "../assets/estrutura.jpg";
-import capa from "../assets/capa.png";
+import capa from "../assets/LOGO_1.png";
 
 export const Route = createFileRoute("/")({
   head: () => ({
