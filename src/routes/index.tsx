@@ -7,7 +7,7 @@ import warehouse from "../assets/galpao.jpg";
 import gate from "../assets/escada.jpg";
 import roof from "../assets/industrial-roof.jpg";
 import logoImg from "../assets/serralheria.png";
-import banner from "../assets/banner.png";
+import banner from "../assets/industrial-workshop.jpg";
 import estrutura from "../assets/estrutura.jpg";
 
 export const Route = createFileRoute("/")({
