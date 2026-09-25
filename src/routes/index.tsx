@@ -173,7 +173,7 @@ function Index() {
           <div className="footer-contact"><h3>CONTATO &amp; LOCALIZAÇÃO</h3><div className="map-placeholder"><MapPin /><span>RIO DO SUL · SANTA CATARINA</span></div><p><Phone /> (47) 3521-XXXX / (47) 9XXXX-XXXX</p><p><Mail /> contato@riosulensemetal.com.br</p></div>
           <div className="hours"><h3>HORÁRIO DE ATENDIMENTO</h3><div className="hours-box"><p><span>Segunda - Sexta:</span><b>07:30 - 18:00</b></p><hr /></div></div>
         </div>
-        <div className="footer-bottom"><span>© 2024 Serralheria e Funilaria Riosulense. Todos os direitos reservados.</span><div><a href="#inicio">Desenvolvido por Bruno Igreja</a></div></div>
+        <div className="footer-bottom"><span>© 2026 Serralheria e Funilaria Riosulense. Todos os direitos reservados.</span><div><a href="#inicio">Desenvolvido por Bruno Igreja</a></div></div>
       </footer>
       <a className="floating-whatsapp" href="https://wa.me/554735210000" aria-label="Abrir WhatsApp"><MessageCircle /></a>
     </main>
