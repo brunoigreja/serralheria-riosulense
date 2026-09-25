@@ -2,11 +2,13 @@ import { createFileRoute } from "@tanstack/react-router";
 import { useEffect } from "react";
 import { Camera, ChevronRight, Compass, Droplets, Globe2, Hammer, Mail, MapPin, MessageCircle, Phone, Share2, Wrench, Zap,
 } from "lucide-react";
-import workshop from "../assets/industrial-workshop.jpg";
-import warehouse from "../assets/blue-warehouse.jpg";
-import gate from "../assets/architectural-gate.jpg";
+import workshop from "../assets/estrutura2.jpg";
+import warehouse from "../assets/galpao.jpg";
+import gate from "../assets/escada.jpg";
 import roof from "../assets/industrial-roof.jpg";
 import logoImg from "../assets/serralheria.png";
+import banner from "../assets/banner.png";
+import estrutura from "../assets/estrutura.jpg";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -105,11 +107,11 @@ function Index() {
       </header>
 
       <section className="hero" aria-labelledby="hero-title">
-        <img src={workshop} alt="Soldadores trabalhando em estruturas metálicas na fábrica Riosulense" width={1536} height={1024} />
+        <img src={banner} alt="Soldadores trabalhando em estruturas metálicas na fábrica Riosulense" width={1536} height={1024} />
         <div className="hero-shade" />
         <div className="hero-content">
           <div className="eyebrow ruled">RIO DO SUL · SC</div>
-          <h1 id="hero-title">Serralheria e Funilaria<br />Riosulense: Tradição e<br />Durabilidade em<br />Estruturas Metálicas.</h1>
+          <h1 id="hero-title">Serralheria e Funilaria<br />Riosulense:<span style={{ color: '#ABC8F5' }}> Tradição e<br />Durabilidade em<br /></span >Estruturas Metálicas.</h1>
           <p>Esquadrias sob medida e soluções industriais com a precisão técnica que seu<br className="desktop-only" /> projeto exige. Transformamos metal em segurança e estética.</p>
           <div className="hero-actions">
             <a className="button button-primary" href="https://wa.me/554735210000"><ChevronRight size={22} /> Solicitar Orçamento via WhatsApp</a>
@@ -137,7 +139,7 @@ function Index() {
       <section className="section featured" aria-labelledby="featured-title">
         <div className="eyebrow">DESTAQUE INDUSTRIAL</div><h2 id="featured-title">Projetos em Destaque</h2>
         <div className="featured-grid">
-          <article className="featured-main project-image"><img src={workshop} alt="Unidade fabril com estrutura metálica" loading="lazy" width={1536} height={1024} /><div className="project-caption"><h3>Unidade Fabril Rio do Sul</h3><p>Execução completa de estrutura metálica reforçada para suporte<br className="desktop-only" /> de maquinário pesado e ponte rolante.</p></div></article>
+          <article className="featured-main project-image"><img src={workshop} alt="Unidade fabril com estrutura metálica" loading="lazy" width={1536} height={1024} /><div className="project-caption"><h3>Marquise e Fachada Comercial</h3><p>Estrutura metálica para marquise frontal com treliças de travamento e cobertura em telha aluzinco, garantindo proteção e estética ao imóvel.<br className="desktop-only" />Projeto e fabricação de marquise metálica.</p></div></article>
           <div className="featured-side"><img src={warehouse} alt="Galpão industrial com fachada metálica azul" loading="lazy" width={1024} height={1024} /><img src={gate} alt="Portão arquitetônico residencial em aço" loading="lazy" width={1024} height={1024} /></div>
         </div>
       </section>
@@ -145,9 +147,9 @@ function Index() {
       <section id="portfolio" className="section gallery" aria-labelledby="gallery-title">
         <div className="eyebrow">PORTFÓLIO COMPLETO</div><h2 id="gallery-title">Galeria de Projetos</h2><p className="gallery-intro">Conheça alguns de nossos trabalhos realizados em Rio do Sul e região, desde o<br className="desktop-only" /> industrial pesado até o residencial de alto padrão.</p>
         <div className="gallery-grid">
-          <ProjectCard image={gate} alt="Portão metálico residencial" category="RESIDENCIAL" title="Portão Arquitetônico" text="Design minimalista com corte a laser e acabamento premium." />
+          <ProjectCard image={gate} alt="Portão metálico residencial" category="RESIDENCIAL" title="Escada Arquitetônica em Aço" text="Estrutura metálica de alta precisão com acabamento em pintura eletrostática preta e fechamento elegante em cabos." />
           <ProjectCard image={roof} alt="Sistema de calhas em cobertura industrial" category="INDUSTRIAL" title="Sistema de Cobertura Pluvial" text="Instalação de calhas industriais e rufos em zinco em galpão de 2000m²." />
-          <ProjectCard image={workshop} alt="Estrutura de sustentação industrial" category="INDÚSTRIA" title="Estrutura de Sustentação" text="Montagem técnica de vigas I para ampliação de mezanino industrial." />
+          <ProjectCard image={estrutura} alt="Estrutura de sustentação industrial" category="INDÚSTRIA" title="Cobertura Metálica Treliçada" text="Estrutura metálica de grande vão com treliças de alta resistência, pilares reforçados e fechamento superior com telhas trapezoidais." />
         </div>
       </section>
 
