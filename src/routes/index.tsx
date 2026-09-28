@@ -124,7 +124,7 @@ function Index() {
       <section id="servicos" className="section specialties">
         <div className="section-head">
           <div><h2>Especialidades Industriais</h2><p>Operamos com equipamentos de ponta para garantir cortes precisos e soldas de alta<br className="desktop-only" /> resistência em cada peça produzida.</p></div>
-          <div className="slider-dots" aria-hidden="true"><i /><i /><i /></div>
+          <div className="slider-dots" aria-hidden="true"></div>
         </div>
         <div className="specialty-grid">
           {specialties.map(({ title, icon: Icon, watermark: Watermark, items }) => (
@@ -149,7 +149,7 @@ function Index() {
         <div className="eyebrow">PORTFÓLIO COMPLETO</div><h2 id="gallery-title">Galeria de Projetos</h2><p className="gallery-intro">Conheça alguns de nossos trabalhos realizados em Rio do Sul e região, desde o<br className="desktop-only" /> industrial pesado até o residencial de alto padrão.</p>
         <div className="gallery-grid">
           <ProjectCard image={gate} alt="Portão metálico residencial" category="RESIDENCIAL" title="Escada Arquitetônica em Aço" text="Estrutura metálica de alta precisão com acabamento em pintura eletrostática preta e fechamento elegante em cabos." />
-          <ProjectCard image={roof} alt="Sistema de calhas em cobertura industrial" category="INDUSTRIAL" title="Sistema de Cobertura Pluvial" text="Instalação de calhas industriais e rufos em zinco em galpão de 2000m²." />
+          <ProjectCard image={roof} alt="Sistema de calhas em cobertura industrial" category="INDÚSTRIA" title="Sistema de Cobertura Pluvial" text="Instalação de calhas industriais e rufos em zinco em galpão de 2000m²." />
           <ProjectCard image={estrutura} alt="Estrutura de sustentação industrial" category="INDÚSTRIA" title="Cobertura Metálica Treliçada" text="Estrutura metálica de grande vão com treliças de alta resistência, pilares reforçados e fechamento superior com telhas trapezoidais." />
         </div>
       </section>
@@ -171,7 +171,7 @@ function Index() {
       <footer id="contato">
         <div className="footer-main">
           <div className="footer-about"><h2>RIOSULENSE</h2><p>Líder em Rio do Sul na fabricação de<br /> estruturas metálicas e soluções<br /> completas de funilaria para indústrias e<br /> residências.</p><div className="socials"><a href="#inicio" aria-label="Site"><Globe2 /></a><a href="#contato" aria-label="Compartilhar"><Share2 /></a><a href="#portfolio" aria-label="Instagram"><Camera /></a></div></div>
-          <div className="footer-contact"><h3>CONTATO &amp; LOCALIZAÇÃO</h3><div className="map-placeholder"><MapPin /><span>RIO DO SUL · SANTA CATARINA</span></div><p><Phone /> (47) 3521-XXXX / (47) 9XXXX-XXXX</p><p><Mail /> contato@riosulensemetal.com.br</p></div>
+          <div className="footer-contact"><h3>CONTATO &amp; LOCALIZAÇÃO</h3><div className="map-placeholder"><MapPin /><span>RIO DO SUL · SANTA CATARINA</span></div><p><Phone /> (47) 3521-2678 / (47) 99679-0626</p><p><Mail /> contato@riosulensemetal.com.br</p></div>
           <div className="hours"><h3>HORÁRIO DE ATENDIMENTO</h3><div className="hours-box"><p><span>Segunda - Sexta:</span><b>07:30 - 18:00</b></p><hr /></div></div>
         </div>
         <div className="footer-bottom"><span>© 2026 Serralheria e Funilaria Riosulense. Todos os direitos reservados.</span><div><a href="#inicio">Desenvolvido por Bruno Igreja</a></div></div>
