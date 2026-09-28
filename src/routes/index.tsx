@@ -171,7 +171,7 @@ function Index() {
       <footer id="contato">
         <div className="footer-main">
           <div className="footer-about"><h2>RIOSULENSE</h2><p>Líder em Rio do Sul na fabricação de<br /> estruturas metálicas e soluções<br /> completas de funilaria para indústrias e<br /> residências.</p><div className="socials"><a href="#inicio" aria-label="Site"><Globe2 /></a><a href="#contato" aria-label="Compartilhar"><Share2 /></a><a href="#portfolio" aria-label="Instagram"><Camera /></a></div></div>
-          <div className="footer-contact"><h3>CONTATO &amp; LOCALIZAÇÃO</h3><div className="map-placeholder"><MapPin /><span>RIO DO SUL · SANTA CATARINA</span></div><p><Phone /> (47) 3521-2678 / (47) 99679-0626</p><p><Mail /> contato@riosulensemetal.com.br</p></div>
+          <div className="footer-contact"><h3>CONTATO &amp; LOCALIZAÇÃO</h3><div className="map-placeholder"><MapPin /><span>RIO DO SUL · SANTA CATARINA</span></div><p><Phone /> (47) 3521-2678 / (47) 99215-1700</p><p><Mail /> serralheriariosulense@hotmail.com</p></div>
           <div className="hours"><h3>HORÁRIO DE ATENDIMENTO</h3><div className="hours-box"><p><span>Segunda - Sexta:</span><b>07:30 - 18:00</b></p><hr /></div></div>
         </div>
         <div className="footer-bottom"><span>© 2026 Serralheria e Funilaria Riosulense. Todos os direitos reservados.</span><div><a href="#inicio">Desenvolvido por Bruno Igreja</a></div></div>
