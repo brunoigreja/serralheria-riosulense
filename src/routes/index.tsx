@@ -44,7 +44,8 @@ const metrics = [
   ["36+", "ANOS DE EXPERIÊNCIA"],
   ["700+", "PROJETOS ENTREGUES"],
   ["100%", "AÇO CERTIFICADO"],
-  ["24h", "SUPORTE TÉCNICO"],
+  ["100%", "PRECISÃO TÉCNICA"],
+  
 ];
 
 function Logo() {
