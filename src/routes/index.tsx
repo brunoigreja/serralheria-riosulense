@@ -10,6 +10,9 @@ import logoImg from "../assets/serralheria.png";
 import banner from "../assets/industrial-workshop.jpg";
 import estrutura from "../assets/estrutura.jpg";
 import capa from "../assets/LOGO_1.png";
+import caminhao from "../assets/caminhao.jpg";
+import escada from "../assets/escada-cara.jpg";
+import portao from "../assets/portao.jpg";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -152,6 +155,9 @@ function Index() {
           <ProjectCard image={gate} alt="Portão metálico residencial" category="RESIDENCIAL" title="Escada Arquitetônica em Aço" text="Estrutura metálica de alta precisão com acabamento em pintura eletrostática preta e fechamento elegante em cabos." />
           <ProjectCard image={roof} alt="Sistema de calhas em cobertura industrial" category="INDÚSTRIA" title="Sistema de Cobertura Pluvial" text="Instalação de calhas industriais e rufos em zinco em galpão de 2000m²." />
           <ProjectCard image={estrutura} alt="Estrutura de sustentação industrial" category="INDÚSTRIA" title="Cobertura Metálica Treliçada" text="Estrutura metálica de grande vão com treliças de alta resistência, pilares reforçados e fechamento superior com telhas trapezoidais." />
+          <ProjectCard image={escada} alt="Escada Caracol em Aço" category="RESIDENCIAL" title="Escada Caracol em Aço" text="Design compacto e funcional em estrutura metálica helicoidal, ideal para otimização de espaço com acabamento preto fosco." />
+          <ProjectCard image={caminhao} alt="Cobertura Comercial Suspensa" category="COMERCIAL" title="Cobertura Comercial Suspensa" text="Fabricação e instalação técnica de estrutura para marquise externa em fachada envidraçada, com suporte logístico especializado." />
+          <ProjectCard image={portao} alt="Portão e Gradil Metálico" category="RESIDENCIAL" title="Portão e Gradil Metálico" text="Fabricação e instalação de portão de correr e gradil frontal em aço, com detalhes ornamentais e alta proteção contra intempéries." />
         </div>
       </section>
 
