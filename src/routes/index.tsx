@@ -4,7 +4,7 @@ import { Camera, ChevronRight, Compass, Droplets, Globe2, Hammer, Mail, MapPin, 
 } from "lucide-react";
 import workshop from "../assets/estrutura2.jpg";
 import warehouse from "../assets/galpao.jpg";
-import gate from "../assets/escada.jpg";
+import gate from "../assets/escada-cara.jpg";
 import roof from "../assets/industrial-roof.jpg";
 import logoImg from "../assets/serralheria.png";
 import banner from "../assets/industrial-workshop.jpg";
