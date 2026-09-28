@@ -4,7 +4,7 @@ import { Camera, ChevronRight, Compass, Droplets, Globe2, Hammer, Mail, MapPin, 
 } from "lucide-react";
 import workshop from "../assets/estrutura2.jpg";
 import warehouse from "../assets/galpao.jpg";
-import gate from "../assets/escada-cara.jpg";
+import gate from "../assets/teto.jpg";
 import roof from "../assets/industrial-roof.jpg";
 import logoImg from "../assets/serralheria.png";
 import banner from "../assets/industrial-workshop.jpg";
@@ -13,6 +13,7 @@ import capa from "../assets/LOGO_1.png";
 import caminhao from "../assets/caminhao.jpg";
 import escada from "../assets/escada-cara.jpg";
 import portao from "../assets/portao.jpg";
+import esca from "../assets/escada.jpg";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -152,7 +153,7 @@ function Index() {
       <section id="portfolio" className="section gallery" aria-labelledby="gallery-title">
         <div className="eyebrow">PORTFÓLIO COMPLETO</div><h2 id="gallery-title">Galeria de Projetos</h2><p className="gallery-intro">Conheça alguns de nossos trabalhos realizados em Rio do Sul e região, desde o<br className="desktop-only" /> industrial pesado até o residencial de alto padrão.</p>
         <div className="gallery-grid">
-          <ProjectCard image={gate} alt="Portão metálico residencial" category="RESIDENCIAL" title="Escada Arquitetônica em Aço" text="Estrutura metálica de alta precisão com acabamento em pintura eletrostática preta e fechamento elegante em cabos." />
+          <ProjectCard image={esca} alt="Portão metálico residencial" category="RESIDENCIAL" title="Escada Arquitetônica em Aço" text="Estrutura metálica de alta precisão com acabamento em pintura eletrostática preta e fechamento elegante em cabos." />
           <ProjectCard image={roof} alt="Sistema de calhas em cobertura industrial" category="INDÚSTRIA" title="Sistema de Cobertura Pluvial" text="Instalação de calhas industriais e rufos em zinco em galpão de 2000m²." />
           <ProjectCard image={estrutura} alt="Estrutura de sustentação industrial" category="INDÚSTRIA" title="Cobertura Metálica Treliçada" text="Estrutura metálica de grande vão com treliças de alta resistência, pilares reforçados e fechamento superior com telhas trapezoidais." />
           <ProjectCard image={escada} alt="Escada Caracol em Aço" category="RESIDENCIAL" title="Escada Caracol em Aço" text="Design compacto e funcional em estrutura metálica helicoidal, ideal para otimização de espaço com acabamento preto fosco." />
